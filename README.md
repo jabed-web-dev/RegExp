@@ -1533,9 +1533,6 @@ _________________________________________________
 >
 > **Note:** Some Unicode properties encompasses many more characters than some character classes (such as `\w` which matches only latin letters, a to z) but the latter is better supported among browsers (as of January 2020).
  
-### \p{UnicodeProperty}
-> **Definition and Usage:**
- 
 - **Syntax**
 ```js
 // Non-binary values
@@ -1550,6 +1547,9 @@ _________________________________________________
 \P{UnicodeBinaryPropertyName}
 ```
 
+ 
+### \p{UnicodeProperty}
+> **Definition and Usage:**
 
 ```js
 const sentence = 'A ticket to 大阪 costs ¥2000 👌.';
