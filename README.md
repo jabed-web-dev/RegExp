@@ -232,7 +232,7 @@ _________________________________________________
 
 ### test()
 > **Definition and Usage:**\
-> The `test()` method returns `true` if it finds a match returns `true`, otherwise it returns false.
+> The `test()` method returns `true` if it finds a match returns `true`, otherwise it returns `false`.
 
 ```js
 let str = 'table football, foosball';
