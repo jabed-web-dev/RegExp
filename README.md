@@ -258,7 +258,6 @@ let str = 'table football, foosball';
 let regex = /foo/g;
  
 console.log(regex.exec(str)); // [ 'foo', index: 6, input: 'table football, foosball', groups: undefined ]
- 
 console.log(regex.exec(str)); // [ 'foo', index: 16, input: 'table football, foosball', groups: undefined ]
 console.log(regex.exec(str)); // null
 
