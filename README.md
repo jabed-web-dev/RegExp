@@ -1705,7 +1705,7 @@ let str = `{ name: john, email: john@mail.com },
            { name: smith, email: smith@mail.com },
            { name: quano, email: quano@mail.com }`;
 
-let regex = new RegExp(`name:\\s${username}.+(?=\\s*})`, 'g');
+let regex = new RegExp(`name:\\s${username}.+?(?=\\s*})`, 'g');
 
 console.log(str.match(regex)); // [ 'name: john, email: john@mail.com' ]
 ```
