@@ -1465,7 +1465,7 @@ console.log(str2.match(regex2)); // [ 'john@mail.com', 'smith@mail.com' ]
  
 ```js
 let str = 'display:flex'
-let regex = /(?<key>[\w-]+):(?<value>[\w-]+)/; // without global search
+let regex = /(?<key>\w+):(?<value>\w+)/; // without global search
 
 let result = str.match(regex);
 console.log(result.groups) // {key: display, value: flex}
