@@ -1464,21 +1464,27 @@ console.log(str2.match(regex2)); // [ 'john@mail.com', 'smith@mail.com' ]
 > Named capturing group: Matches `x` and stores it on the groups property of the returned matches under the name specified by `<name>`. The angle brackets `< >` are required for group name.
  
 ```js
-let str = '2019-10-30 2020-01-01';
-let regex = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/g;
+let str = 'display:flex'
+let regex = /(?<key>[\w-]+):(?<value>[\w-]+)/; // without global search
 
-let result = [...str.matchAll(regex)];
-
-console.log(result[0].groups); // { year: '2019', month: '10', day: '30' }
-console.log(result[1].groups); // { year: '2020', month: '01', day: '01' }
+let result = str.match(regex);
+console.log(result.groups) // {key: display, value: flex}
  
 
-let str2 = '{ name: john, email: john@mail.com }, { name: smith, email: smith@mail.com }';
-let regex2 = /(?<email>\w+@\w+\.\w+)/g;
+let str2 = '2019-10-30 2020-01-01';
+let regex2 = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/g;
+ 
+let result2 = [...str2.matchAll(regex2)];
+console.log(result2[0].groups); // { year: '2019', month: '10', day: '30' }
+console.log(result2[1].groups); // { year: '2020', month: '01', day: '01' }
+ 
 
-let result2 = [...str2.matchAll(regex2)]
-console.log(result2[0].groups); // { email: 'john@mail.com' }
-console.log(result2[1].groups); // { email: 'smith@mail.com' }
+let str3 = '{ name: john, email: john@mail.com }, { name: smith, email: smith@mail.com }';
+let regex3 = /(?<email>\w+@\w+\.\w+)/g;
+
+let result3 = [...str3.matchAll(regex3)]
+console.log(result3[0].groups); // { email: 'john@mail.com' }
+console.log(result3[1].groups); // { email: 'smith@mail.com' }
 ```
  
  
