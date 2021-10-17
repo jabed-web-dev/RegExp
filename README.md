@@ -1344,7 +1344,7 @@ let regex2 = /[0-9]+x[0-9]+/g;
 console.log(str.match(regex2)); // [ '1440x900' ]
 ```
 
-- ** Match 1 to 4
+- **Match 1 to 4**
 ```js
 let str = '123456789';
 
