@@ -238,7 +238,7 @@ _________________________________________________
 let str = 'table football, foosball';
 let regex = /foo/g;
  
-console.log(str.test(regex)) // true
+console.log(retex.test(str)) // true
 console.log(regex.test(str)); // true
 console.log(regex.test(str)); // false
  
