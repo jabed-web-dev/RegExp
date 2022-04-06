@@ -113,6 +113,7 @@
   * [`[a-z] or [A-Z]`](#a-z-or-a-z)
   * [`[0-9]`](#0-9)
   * [`[^xyz]`](#xyz-1)
+  * [`[xyz^]`](#xyz-2)
   * [`[^a-z]`](#a-z)
   * [`\u{1F600}-\u{1F64F}`](#u1f600-u1f64f)
  </blockquote></details>
