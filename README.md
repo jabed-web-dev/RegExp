@@ -118,7 +118,7 @@
  </blockquote></details>
 
  
-<details><summary>Groups & ranges</summary><blockquote>
+<details><summary>Capturing Groups</summary><blockquote>
   
   * [`(x)`](#x-8)
   * [`(?:x)`](#x-9)
@@ -1406,7 +1406,7 @@ _________________________________________________
  
  
  
-## [Groups & ranges](#Table-of-contents)
+## [Capturing Groups](#Table-of-contents)
  
 ### (x)
 > **Definition and Usage:**\
