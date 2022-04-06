@@ -113,7 +113,6 @@
   * [`[a-z] or [A-Z]`](#a-z-or-a-z)
   * [`[0-9]`](#0-9)
   * [`[^xyz]`](#xyz-1)
-  * [`[xyz^]`](#xyz-2)
   * [`[^a-z]`](#a-z)
   * [`\u{1F600}-\u{1F64F}`](#u1f600-u1f64f)
  </blockquote></details>
@@ -1365,19 +1364,6 @@ let regex = /[^aeiou]/g;
  
 console.log(str.match(regex)); 
 // output: [ 'g', 'l', 'b', ' ', 'j', 'c', 'k', 's', ' ', 'v', 'x', ' ', 'd', 'w', 'r', 'v', 's', '!' ]
-```
-  
-### [xyz^]
-> **Definition and Usage:**\
-> A positive character class. That is, it matches anything that is enclosed in the brackets.
-
-```js
-let str = 'glib jocks vex dwarves!'
-//           ^   ^     ^    ^  ^
-let regex = /[aeiou^]/g;
- 
-console.log(str.match(regex)); 
-// output: [ 'i', 'o', 'e', 'a', 'e' ]
 ```
  
 ### [^a-z]
