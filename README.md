@@ -1360,13 +1360,25 @@ console.log(str.match(regex)); // [ '1', '2', '3', '4' ]
 
 ```js
 let str = 'glib jocks vex dwarves!'
-//           ^   ^     ^    ^  ^
+// without   ^   ^     ^    ^  ^
 let regex = /[^aeiou]/g;
  
 console.log(str.match(regex)); 
 // output: [ 'g', 'l', 'b', ' ', 'j', 'c', 'k', 's', ' ', 'v', 'x', ' ', 'd', 'w', 'r', 'v', 's', '!' ]
 ```
+  
+### [xyz^]
+> **Definition and Usage:**\
+> A positive character class. That is, it matches anything that is enclosed in the brackets.
 
+```js
+let str = 'glib jocks vex dwarves!'
+//           ^   ^     ^    ^  ^
+let regex = /[aeiou^]/g;
+ 
+console.log(str.match(regex)); 
+// output: [ 'i', 'o', 'e', 'a', 'e' ]
+```
  
 ### [^a-z]
 > **Definition and Usage:**\
