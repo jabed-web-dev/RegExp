@@ -1701,7 +1701,7 @@ _________________________________________________
 ### regex in variable
 > **Definition and Usage:**\
 > If you want a dynamic variable in Regex, you must use a constructor object. It is better to use `` `${variable}` `` Template literals for this.\
-> **Node:** Where a `\` regex is used, there two `\\` must be used. For example: `\w => \\w` `\s => \\s` `\\ => \\\\`
+> **Node:** Where a `\` regex is used, there two `\\` must be used. For example: `\w => \\w` `\s => \\s` `\\ => \\\\` Also, we can use `String.raw` like this ``String.raw`\s` `` with a `\` backslash.
  
 ```js
 let username = 'john'
@@ -1711,7 +1711,7 @@ let str = `{ name: john, email: john@mail.com },
            { name: quano, email: quano@mail.com }`;
 
 let regex = new RegExp(`name:\\s${username}.+?(?=\\s*})`, 'g');
-
+// new RegExp(String.raw`name:\s${username}.+?(?=\s*})`, 'g');
 console.log(str.match(regex)); // [ 'name: john, email: john@mail.com' ]
 ```
  
