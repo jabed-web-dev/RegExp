@@ -1081,7 +1081,7 @@ console.log(str.match(regex)); // [ 'is' ]
 let str = 'is this all there is lot';
 //             ^
 // 'is' not followed before 'th'
-let regex = /(?<=th)is/g;
+let regex = /(?<!th)is/g;
  
 console.log(str.match(regex)); // [ 'is', 'is' ]
 ```
