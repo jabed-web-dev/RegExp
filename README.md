@@ -1,7 +1,7 @@
 # Welcome to RegExp 
 
 ### Table of contents
-<details><summary>RegExp</summary><blockquote>
+<details open><summary>RegExp</summary><blockquote>
 
   * [`Introduction`](#introduction)
   * [`Match String`](#match-string)
