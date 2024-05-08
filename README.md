@@ -77,7 +77,7 @@
 <details><summary>Alternation</summary><blockquote>
   
   * [`^x`](#x)
-  * [`x&`](#x-1)
+  * [`x$`](#x-1)
   * [`\bx or x\b`](#bx-or-xb)
   * [`\Bx or x\B`](#bx-or-xb-1)
   * [`x(?=y)`](#xy)
